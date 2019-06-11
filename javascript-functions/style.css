@@ -1,0 +1,36 @@
+.no-dispaly {
+    visibility: hidden;
+}
+
+.dispaly {
+    visibility: visible;
+}
+
+.flg-holder {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: auto;
+    height: 300px;
+}
+
+#isr-flag {
+    background-image: url("http://www.flagblvd.com/wp-content/uploads/2015/09/israeli-flag-medium.png");
+}
+
+#usa-flag {
+    background-image: url("https://images-na.ssl-images-amazon.com/images/I/719a9V0DOjL._SY355_.jpg");
+}
+#itl-flag {
+    background-image: url("https://images-na.ssl-images-amazon.com/images/I/41rF4Xwf3SL._SX355_.jpg");
+                    
+}
+
+#nethrland-flag {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_the_Netherlands.svg");  
+}
+
+#france-flag {
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/250px-Flag_of_France.svg.png");
+}
+
