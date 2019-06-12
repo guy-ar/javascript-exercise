@@ -341,17 +341,25 @@ function frankenSplice(arr1, arr2, n) {
   chunkArrayInGroups([0, 1, 2, 3, 4, 5], 3)
 
   function sumAll(arr) {
-    if (arr[0] < arr[1]) {
-      var min = arr[0];
-      var max = arr[1];
-    } else {
-      var min = arr[1];
-      var max = arr[0];
-    }
-    
-    return 1;
-  }
+      /* Return the sum of those two numbers plus the sum of all the numbers between them.
+        The lowest number will not always come first. */
+    var min, max;
+     if (arr[0] < arr[1]) {
+       min = arr[0];
+       max = arr[1] 
+     } else {
+       min = arr[1];
+       max = arr[0]; 
+     }
+     var sum = 0;
+     var input = min;
+     while (input <= max) {
+       sum += input;
+       input++;
+     }
+     return sum;
+   }
+   
   
-  sumAll([1, 4]);
-  sumAll([1, 4]) should return 10.
-  sumAll([10, 5]) should return 45.
+  sumAll([1, 4]); //should return 10.
+  sumAll([10, 5]); //should return 45.
